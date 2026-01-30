@@ -1,5 +1,6 @@
+# Write a program to implement k-Nearest Neighbour algorithm to classify the iris data set. Print both correct and wrong predictions
+
 import numpy as np
-import sklearn
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_tes_split as tts
 from sklearn.neighbors import KNeighborsClassifier
@@ -20,7 +21,7 @@ knn_classifier = KNeighborsClassifier(n_neighbors= k)
 #Train the classifier
 knn_classifier.fit(X_train, y_train)
 
-y_pred = knn_Classifier.predict(X_test)
+y_pred = knn_classifier.predict(X_test)
 
 #Evaluate the model
 accuracy = accuracy_score(y_test, y_pred)
